@@ -316,7 +316,7 @@ Used on primary CTA buttons, hero logo title text, section gradients, step numbe
 | Asset / File | File Path | Status | File Size | Description |
 |---|---|---|---|---|
 | **HTML Page** | `29beta/index.html` | ✅ Verified | ~48.7 KB | Complete static HTML5 page with all 10 sections, hero widget, form popup modal, and 1280px containers |
-| **PHP Page** | `29beta/index_beta.php` | ⏸️ Pending Sync | ~49.4 KB | PHP page (pending sync with finalized `index.html` markup upon user request) |
+| **PHP Page** | `29beta/index_beta.php` | ✅ Verified | ~51.1 KB | PHP page synced with `index.html` markup, including template ID `$template = 194`, `subdominio_ini.php`, geo tracking, and `campana_user.php` |
 | **CSS Stylesheet** | `29beta/style.css` | ✅ Verified | ~27.5 KB | Self-contained design system (CSS variables, responsive grids, popup modal styles, animations) |
 | **JavaScript Script** | `29beta/script.js` | ✅ Verified | ~5.4 KB | IIFE managing scroll header, hamburger drawer, reveal, calculator, and form popup modal controller |
 | **Logo Asset** | `29beta/logos/logo_chico.png` | ✅ Copied | ~175 KB | ChatVioniko brand mark badge |

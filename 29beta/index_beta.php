@@ -24,9 +24,6 @@ if (isset($_SERVER['HTTP_ORIGIN'])) {
 
 // Access-Control headers are received during OPTIONS requests
 if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
-    if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))
-        header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-
     if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))
         header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");
 
@@ -55,7 +52,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
   <meta property="og:description" content="Prueba ChatVioniko, descubre sus herramientas de IA y conoce como funciona el programa de afiliados para suscriptores activos.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#030711">
-  <link rel="stylesheet" href="style.css?v=1.0.0">
+  <link rel="stylesheet" href="style.css?v=1.0.5">
 </head>
 <body>
 
@@ -67,7 +64,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
   <input type="hidden" id="template" name="template" value="<?= htmlspecialchars($template ?? 194) ?>">
   <input type="hidden" id="idioma" name="idioma" value="es">
 
-  <!-- Header Navigation -->
+  <!-- Fixed Top Header Navigation -->
   <header class="site-header">
     <div class="header-inner">
       <a href="#inicio" class="header-logo" aria-label="ChatVioniko afiliados, volver al inicio">
@@ -96,6 +93,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </button>
     </div>
 
+    <!-- Mobile Drawer Menu -->
     <nav class="mobile-nav" aria-label="Principal movil">
       <div class="mobile-nav-inner">
         <a href="#como-funciona">Como funciona</a>
@@ -110,38 +108,38 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
 
   <main id="inicio">
 
-    <!-- Hero Section -->
-    <section class="section" style="padding-top: 7rem; padding-bottom: 5rem;">
+    <!-- Section 1: Hero Section -->
+    <section class="section" style="padding-top: 6rem; padding-bottom: 4rem;">
       <div class="ambient-field" style="position: absolute; inset: 0;" aria-hidden="true"></div>
       
       <div class="container">
-        <!-- Hero Logo Badge -->
+        <!-- Hero Logo Badge Header -->
         <div class="reveal" style="display: flex; justify-content: center; margin-bottom: 2rem; position: relative; z-index: 10;">
           <div class="hero-logo-glow" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
             <div class="hero-logo-box">
               <img src="logos/logo_chico.png" alt="ChatVioniko" width="56" height="56">
             </div>
-            <h1 class="hero-title gradient-text">ChatVioniko</h1>
+            <p class="hero-title gradient-text">ChatVioniko</p>
             <p style="margin-top: 0.75rem; font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--mist);">
               Programa de afiliados
             </p>
           </div>
         </div>
 
-        <!-- Hero Content & Visual Grid -->
-        <div style="display: grid; gap: 3rem; align-items: center;" class="hero-content-grid">
+        <!-- 2-Column Hero Grid: Left Content + Right Visual Mockup Widget -->
+        <div class="hero-content-grid">
           <div class="reveal">
             <span class="eyebrow-badge">Programa de afiliados</span>
-            <h2 style="margin-top: 1.75rem; font-size: 2.25rem; font-weight: 900; text-transform: uppercase; line-height: 0.98; color: #fff;">
+            <h1 class="hero-main-title">
               Gana comisiones<br>
               <span class="gradient-text">recomendando ChatVioniko</span>
-            </h2>
+            </h1>
             <p style="margin-top: 1.5rem; max-width: 42rem; font-size: 1.125rem; line-height: 1.75rem; color: var(--mist);">
               Comparte una plataforma completa de inteligencia artificial y recibe comisiones por las nuevas suscripciones que generes con tu enlace cuando tengas una suscripcion activa y el programa habilitado dentro de tu cuenta.
             </p>
 
-            <!-- Stat Pills -->
-            <div style="margin-top: 2rem; display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));">
+            <!-- Stat Pills Grid -->
+            <div class="stat-pills-grid">
               <div class="stat-pill">
                 <p class="stat-pill-val">20%</p>
                 <p class="stat-pill-label">Nivel 1</p>
@@ -156,8 +154,8 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
               </div>
             </div>
 
-            <!-- Hero Action Buttons -->
-            <div style="margin-top: 2rem; display: flex; flex-direction: column; gap: 0.75rem;" class="hero-btn-stack">
+            <!-- Action Buttons Stack -->
+            <div class="hero-btn-stack">
               <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">Probar ChatVioniko gratis</a>
               <a href="#como-funciona" class="btn btn-secondary">Ver como funciona el programa</a>
             </div>
@@ -170,12 +168,12 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
             </p>
           </div>
 
-          <!-- Hero Visual Widget -->
+          <!-- Right Column: HeroAffiliateVisual Widget Box -->
           <div class="reveal">
             <div class="hero-visual" style="border-radius: 0.5rem; border: 1px solid rgba(34, 211, 238, 0.2); background: rgba(8, 17, 32, 0.4); box-shadow: var(--shadow-glow);">
               <div class="system-grid" style="position: absolute; inset: 0.75rem; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1);"></div>
 
-              <!-- Panel 1: Tu Enlace -->
+              <!-- Floating Card 1: Tu Enlace -->
               <div style="position: absolute; left: 1.5rem; top: 1.75rem; width: 58%; border-radius: 0.5rem; border: 1px solid rgba(139, 92, 246, 0.3); background: rgba(8, 17, 32, 0.9); padding: 1rem; box-shadow: var(--shadow-glow);">
                 <p style="font-size: 0.75rem; font-weight: 900; text-transform: uppercase; color: #ddd6fe;">Tu enlace</p>
                 <div style="margin-top: 1rem; border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem;">
@@ -185,21 +183,21 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
                 <p style="margin-top: 1rem; font-size: 0.75rem; font-weight: 700; color: var(--mist);">Comparte ChatVioniko</p>
               </div>
 
-              <!-- Panel 2: Nivel 1 -->
+              <!-- Floating Card 2: Nivel 1 -->
               <div style="position: absolute; right: 1.5rem; top: 5rem; width: 43%; border-radius: 0.5rem; border: 1px solid rgba(34, 211, 238, 0.3); background: rgba(8, 17, 32, 0.9); padding: 1rem; box-shadow: var(--shadow-cyan);">
                 <p style="font-size: 0.75rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Nivel 1</p>
                 <p style="margin-top: 1rem; font-size: 2.25rem; font-weight: 900; color: #fff;">20%</p>
                 <p style="margin-top: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--mist);">suscripcion directa</p>
               </div>
 
-              <!-- Panel 3: Ejemplo -->
+              <!-- Floating Card 3: Ejemplo -->
               <div style="position: absolute; bottom: 6rem; left: 2.5rem; width: 47%; border-radius: 0.5rem; border: 1px solid rgba(163, 230, 53, 0.25); background: rgba(8, 17, 32, 0.9); padding: 1rem; box-shadow: var(--shadow-lime);">
                 <p style="font-size: 0.75rem; font-weight: 900; text-transform: uppercase; color: var(--lime-glow);">Ejemplo</p>
                 <p style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; color: #fff;">5.80 USD</p>
                 <p style="margin-top: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--mist);">por suscripcion</p>
               </div>
 
-              <!-- Panel 4: Nivel 2 Certificado -->
+              <!-- Floating Card 4: Nivel 2 Certificado -->
               <div style="position: absolute; bottom: 2rem; right: 2rem; width: 56%; border-radius: 0.5rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(8, 17, 32, 0.9); padding: 1rem;">
                 <p style="font-size: 0.75rem; font-weight: 900; text-transform: uppercase; color: #fff;">Nivel 2 certificado</p>
                 <div style="margin-top: 1rem; display: flex; align-items: center; gap: 0.5rem;">
@@ -210,7 +208,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
                 <p style="margin-top: 1rem; font-size: 0.875rem; font-weight: 900; color: var(--cyan-glow);">5% segundo nivel</p>
               </div>
 
-              <!-- Animated Lines -->
+              <!-- Pulsing Connector Lines -->
               <span class="pulse-line" style="position: absolute; left: 18%; top: 39%; height: 1px; width: 58%; transform: rotate(12deg); background: rgba(34, 211, 238, 0.7);"></span>
               <span class="pulse-line" style="position: absolute; bottom: 37%; left: 27%; height: 1px; width: 44%; transform: rotate(-12deg); background: rgba(139, 92, 246, 0.7);"></span>
             </div>
@@ -219,7 +217,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- Potential Earnings Section -->
+    <!-- Section 2: Potential Earnings Section -->
     <section id="ganancias" class="section">
       <div class="container">
         <div class="reveal">
@@ -230,11 +228,11 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
           </div>
         </div>
 
-        <div style="margin-top: 3rem; display: grid; gap: 1.5rem;" class="earnings-section-grid">
+        <div class="earnings-section-grid">
           <div class="reveal">
             <div style="border-radius: 0.5rem; border: 1px solid rgba(139, 92, 246, 0.3); background: rgba(8, 17, 32, 0.75); padding: 1.5rem; box-shadow: var(--shadow-glow);">
               <p style="font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Comision directa</p>
-              <h3 style="margin-top: 1rem; font-size: 2.25rem; font-weight: 900; text-transform: uppercase; color: #fff;" class="earnings-hero-calc">
+              <h3 style="margin-top: 1rem; font-size: 2.25rem; font-weight: 900; text-transform: uppercase; color: #fff;">
                 29 USD x 20% = <span class="gradient-text">5.80 USD</span>
               </h3>
               <p style="margin-top: 1.25rem; font-size: 1rem; line-height: 1.75rem; color: var(--mist);">
@@ -317,15 +315,15 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- Nivel 2 Certificado Section -->
+    <!-- Section 3: Nivel 2 Certificado Section -->
     <section id="afiliados" class="section">
       <div class="container">
         <div class="reveal">
-          <div style="border-radius: 0.5rem; border: 1px solid rgba(139, 92, 246, 0.3); background: rgba(8, 17, 32, 0.75); padding: 1.5rem; box-shadow: var(--shadow-glow);" class="tier2-box">
-            <div style="display: grid; gap: 2.5rem;" class="tier2-grid">
+          <div class="tier2-box">
+            <div class="tier2-grid">
               <div>
                 <p style="font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Nivel 2 certificado</p>
-                <h2 style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; text-transform: uppercase; line-height: 1.04; color: #fff;">
+                <h2 class="banner-title">
                   Y si construyes<br>
                   <span class="gradient-text">tu propia red?</span>
                 </h2>
@@ -373,7 +371,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- What You Recommending Section -->
+    <!-- Section 4: What You Recommending Section -->
     <section id="que-incluye" class="section">
       <div class="container">
         <div class="reveal">
@@ -384,7 +382,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
           </div>
         </div>
 
-        <div class="feature-grid" style="margin-top: 3rem;">
+        <div class="feature-grid">
           <div class="reveal">
             <article class="feature-card feature-card--cyan">
               <h3>Chat IA personalizable</h3>
@@ -489,11 +487,11 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
           </div>
         </div>
 
-        <!-- Trial Callout Banner -->
+        <!-- Trial Callout Banner: "Ahora pruebalo tu" (max-w-5xl) -->
         <div class="reveal" style="margin-top: 2.5rem;">
-          <div style="max-width: 64rem; margin: 0 auto; border-radius: 0.5rem; border: 1px solid rgba(34, 211, 238, 0.25); background: rgba(8, 17, 32, 0.75); padding: 2rem; text-align: center; box-shadow: var(--shadow-cyan);">
+          <div class="banner-box-callout max-w-5xl">
             <p style="font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Ahora pruebalo tu</p>
-            <h2 style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; text-transform: uppercase; line-height: 1.04; color: #fff;">
+            <h2 class="banner-title">
               Descubre todo lo que puedes hacer<br>
               <span class="gradient-text">con ChatVioniko</span>
             </h2>
@@ -511,13 +509,13 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- Ecosystem Value Block Section -->
+    <!-- Section 5: Ecosystem Value Block Section (Full Container Width max-w-7xl) -->
     <section class="section">
       <div class="container">
         <div class="reveal">
-          <div style="border-radius: 0.5rem; border: 1px solid rgba(34, 211, 238, 0.25); background: rgba(8, 17, 32, 0.75); padding: 2rem; text-align: center; box-shadow: var(--shadow-cyan);">
+          <div class="banner-box-callout" style="border-color: rgba(34, 211, 238, 0.25);">
             <p style="font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Bloque de valor</p>
-            <h2 style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; text-transform: uppercase; line-height: 1.04; color: #fff;">
+            <h2 class="banner-title">
               Todo en una<br>
               <span class="gradient-text">sola suscripcion</span>
             </h2>
@@ -550,7 +548,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- How It Works Section -->
+    <!-- Section 6: How It Works Section (Full Container Width max-w-7xl) -->
     <section id="como-funciona" class="section">
       <div class="container">
         <div class="reveal">
@@ -561,7 +559,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
           </div>
         </div>
 
-        <div class="steps-grid" style="margin-top: 3rem;">
+        <div class="steps-grid">
           <div class="reveal">
             <article class="step-card">
               <span class="step-number">01</span>
@@ -609,7 +607,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- Target Audience Section -->
+    <!-- Section 7: Target Audience Section (max-w-5xl chip container) -->
     <section class="section">
       <div class="container">
         <div class="reveal">
@@ -619,7 +617,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
           </div>
         </div>
 
-        <div style="margin-top: 3rem; max-width: 64rem; margin-left: auto; margin-right: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
+        <div class="max-w-5xl" style="margin-top: 3rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem;">
           <div class="reveal"><span class="chip-tag">Creadores de contenido</span></div>
           <div class="reveal"><span class="chip-tag">Marketers</span></div>
           <div class="reveal"><span class="chip-tag">Emprendedores</span></div>
@@ -633,14 +631,14 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- Action Callout Banner -->
+    <!-- Section 8: Action Callout Banner (Full Container Width max-w-7xl) -->
     <section class="section">
       <div class="container">
         <div class="reveal">
-          <div style="position: relative; overflow: hidden; border-radius: 0.5rem; border: 1px solid rgba(139, 92, 246, 0.4); background: rgba(8, 17, 32, 0.8); padding: 2rem; text-align: center; box-shadow: var(--shadow-glow);">
+          <div class="banner-box-callout" style="position: relative; overflow: hidden; border-color: rgba(139, 92, 246, 0.4); background: rgba(8, 17, 32, 0.8); box-shadow: var(--shadow-glow);">
             <div class="panel-lines" style="position: absolute; inset: 0;" aria-hidden="true"></div>
             <div style="position: relative;">
-              <h2 style="font-size: 1.875rem; font-weight: 900; text-transform: uppercase; line-height: 1.04; color: #fff;">
+              <h2 class="banner-title" style="margin-top: 0;">
                 Ya tienes personas a las que podria servirles ChatVioniko?
               </h2>
               <p style="margin: 1.25rem auto 0; max-width: 48rem; font-size: 1rem; line-height: 1.75rem; color: var(--mist);">
@@ -655,7 +653,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- Section 9: FAQ Section (Full Container Width max-w-7xl) -->
     <section id="preguntas" class="section">
       <div class="container">
         <div class="reveal">
@@ -770,13 +768,13 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
       </div>
     </section>
 
-    <!-- Final CTA Panel -->
+    <!-- Section 10: Final CTA Panel (max-w-5xl) -->
     <section class="section" style="padding-bottom: 6rem;">
       <div class="container">
         <div class="reveal">
-          <div style="max-width: 64rem; margin: 0 auto; border-radius: 0.5rem; border: 1px solid rgba(139, 92, 246, 0.4); background: rgba(8, 17, 32, 0.8); padding: 2rem; text-align: center; box-shadow: var(--shadow-glow);">
+          <div class="banner-box-callout max-w-5xl" style="border-color: rgba(139, 92, 246, 0.4); background: rgba(8, 17, 32, 0.8); box-shadow: var(--shadow-glow);">
             <p style="font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Programa de afiliados</p>
-            <h2 style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; text-transform: uppercase; line-height: 1.04; color: #fff;">
+            <h2 class="banner-title">
               Todo empieza<br>
               <span class="gradient-text">conociendo ChatVioniko</span>
             </h2>
@@ -813,6 +811,56 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
     </div>
   </footer>
 
-  <script src="script.js?v=1.0.0"></script>
+  <!-- Modal Form Popup -->
+  <div id="form-popup-modal" class="form-popup-modal" aria-hidden="true" style="display: none;">
+    <div class="form-popup-overlay"></div>
+    <div class="form-popup-card">
+      <button type="button" class="form-popup-close" aria-label="Close modal">&times;</button>
+      <div class="form-popup-inner">
+        <div class="temp-form">
+          <div class="form-title" data-id="landing-page-form-title">
+            <h2>🔴 Descubre la Experiencia Completa</h2>
+          </div>
+          <div class="form-subtitle" data-id="landing-page-form-sub-title">
+            <p class="modal-sub-heading">Sé de los primeros en conocer esta nueva propuesta</p>
+          </div>
+          <form action="../../registro_prospecto_subdominio_autoresponder.php" method="post" class="cf op-optin-validation" id="myForm">
+            <div class="form-group">
+              <input type="text" name="nombre" class="form-control" id="name" required="" placeholder="Nombre">
+              <small class="error-beta" style="display: none;">You must enter your name.</small>
+            </div>
+
+            <div class="form-group" id="whatsapp_field_div">
+              <label for="phone" class="form-label-whatsapp">Whatsapp</label>
+              <div class="iti iti--allow-dropdown iti--show-flags">
+                <input type="tel" name="telefono_casa" class="form-control" id="phone" autocomplete="off" placeholder="01812-345678">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" required="" id="e-mail" placeholder="E-mail">
+              <small class="error-beta" style="display: none;">You must enter a e-mail.</small>
+            </div>
+
+            <div class="form-group btn-submit-group">
+              <button style="background: #ff1717" type="submit" data-id="landing-page-form-submit-button" class="btn btn-default btn-submit">
+                <span>CLICK AQUI para ACCESAR AHORA</span>
+              </button>
+            </div>
+
+            <input type="hidden" name="pais" id="pais" value="<?php echo to_utf8($geo["geoplugin_countryName"] ?? ''); ?>">
+            <input type="hidden" name="ciudad" id="ciudad" value="<?php echo to_utf8($geo["geoplugin_city"] ?? ''); ?>">
+            <input type="hidden" name="estado" id="estado" value="<?php echo to_utf8($geo["geoplugin_regionName"] ?? ''); ?>">
+            <?php include('../campana_user.php'); ?>
+            <input type="hidden" name="usuario" id="usuario" value="<?= htmlspecialchars($userIdBySubdomain ?? ''); ?>">
+            <input type="hidden" name="template" id="template" value="<?= htmlspecialchars($template ?? 194); ?>">
+            <input type="hidden" name="idioma" id="idioma" value="es">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js?v=1.0.5"></script>
 </body>
 </html>
