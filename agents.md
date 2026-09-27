@@ -315,10 +315,10 @@ Used on primary CTA buttons, hero logo title text, section gradients, step numbe
 
 | Asset / File | File Path | Status | File Size | Description |
 |---|---|---|---|---|
-| **HTML Page** | `29beta/index.html` | ✅ Verified | ~46.2 KB | Complete static HTML5 page with all 10 sections, hero widget, and standardized 1280px containers |
+| **HTML Page** | `29beta/index.html` | ✅ Verified | ~48.7 KB | Complete static HTML5 page with all 10 sections, hero widget, form popup modal, and 1280px containers |
 | **PHP Page** | `29beta/index_beta.php` | ⏸️ Pending Sync | ~49.4 KB | PHP page (pending sync with finalized `index.html` markup upon user request) |
-| **CSS Stylesheet** | `29beta/style.css` | ✅ Verified | ~23.0 KB | Self-contained design system (CSS variables, responsive grids, hero visual mockup, animations) |
-| **JavaScript Script** | `29beta/script.js` | ✅ Verified | ~3.8 KB | IIFE managing scroll header, hamburger drawer, IntersectionObserver reveal, and live commission calculator |
+| **CSS Stylesheet** | `29beta/style.css` | ✅ Verified | ~27.5 KB | Self-contained design system (CSS variables, responsive grids, popup modal styles, animations) |
+| **JavaScript Script** | `29beta/script.js` | ✅ Verified | ~5.4 KB | IIFE managing scroll header, hamburger drawer, reveal, calculator, and form popup modal controller |
 | **Logo Asset** | `29beta/logos/logo_chico.png` | ✅ Copied | ~175 KB | ChatVioniko brand mark badge |
 
 ---
@@ -333,4 +333,6 @@ Used on primary CTA buttons, hero logo title text, section gradients, step numbe
    - Sized typography for callout banner (`.banner-title` with `text-3xl sm:text-5xl font-black uppercase leading-[1.04]`).
 3. **Typography & Layout Alignment**:
    - Equalized container widths and typography scaling for lower sections below "¿Ahora pruebalo tu?".
+4. **Form Popup Modal Integration**:
+   - Added `#form-popup-modal` markup, CSS modal styles, and click event handlers in `script.js` to open the popup when CTA buttons (`.btn-primary`, `a[href="https://chatvioniko.com"]`) are clicked, referencing `28beta`.
 

@@ -114,4 +114,51 @@
   if (rangeInput || numberInput) {
     updateCalculator(rangeInput ? rangeInput.value : 25);
   }
+
+  /* ------ Form Popup Modal Controller ------ */
+  const formModal = document.getElementById('form-popup-modal');
+  if (formModal) {
+    // Force close on initial page load
+    formModal.classList.remove('is-open');
+    formModal.style.display = 'none';
+    formModal.setAttribute('aria-hidden', 'true');
+
+    const formOverlay = formModal.querySelector('.form-popup-overlay');
+    const formCloseBtn = formModal.querySelector('.form-popup-close');
+    const popupCtaButtons = document.querySelectorAll(
+      '.btn-primary, a[href="https://chatvioniko.com"], .btn-trigger-popup, .header-cta a, .mobile-nav a.btn-primary'
+    );
+
+    function openFormModal(e) {
+      if (e) e.preventDefault();
+      formModal.classList.add('is-open');
+      formModal.style.display = 'flex';
+      formModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeFormModal(e) {
+      if (e) e.preventDefault();
+      formModal.classList.remove('is-open');
+      formModal.style.display = 'none';
+      formModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    popupCtaButtons.forEach(function (btn) {
+      btn.addEventListener('click', openFormModal);
+    });
+
+    if (formCloseBtn) formCloseBtn.addEventListener('click', closeFormModal);
+    if (formOverlay) formOverlay.addEventListener('click', closeFormModal);
+
+    document.addEventListener('keydown', function (e) {
+      if (
+        e.key === 'Escape' &&
+        (formModal.classList.contains('is-open') || formModal.style.display === 'flex')
+      ) {
+        closeFormModal();
+      }
+    });
+  }
 })();
