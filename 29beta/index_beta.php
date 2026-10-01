@@ -40,6 +40,7 @@ if (isset($_GET['mode']) && $_GET['mode'] === 'edit') {
 $template = 194;
 include_once('../../subdominio_ini.php');
 $userIdBySubdomain = $rowUSU["clave"] ?? '';
+$video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/General_Horizontalv1.mp4';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -52,7 +53,7 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
   <meta property="og:description" content="Prueba ChatVioniko, descubre sus herramientas de IA y conoce como funciona el programa de afiliados para suscriptores activos.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#030711">
-  <link rel="stylesheet" href="style.css?v=1.0.5">
+  <link rel="stylesheet" href="style.css?v=1.0.6">
 </head>
 <body>
 
@@ -213,6 +214,30 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
               <span class="pulse-line" style="position: absolute; bottom: 37%; left: 27%; height: 1px; width: 44%; transform: rotate(-12deg); background: rgba(139, 92, 246, 0.7);"></span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN VIDEO -->
+    <section class="section" style="padding-top:3rem;">
+      <div class="container">
+        <div class="reveal">
+          <!-- <div class="section-heading"><p class="eyebrow">Mira lo que vas a aprender</p></div> -->
+          <div style="margin-top:2rem;">
+            <button type="button" class="video-preview video-preview--wide" data-src="<?= $video; ?>" data-title="Video general de Academia Vioniko" aria-label="Abrir video: Video general de Academia Vioniko">
+              <video src="<?= $video; ?>#t=0.001" muted playsinline webkit-playsinline preload="auto" aria-hidden="true"></video>
+              <span class="video-preview-overlay"></span>
+              <span class="video-grid-overlay video-grid"></span>
+              <span class="video-preview-play">
+                <span class="play-btn"><span class="play-triangle"></span></span>
+              </span>
+            </button>
+          </div>
+          <!-- <div style="margin-top:1.5rem; max-width: 36rem; margin-left: auto; margin-right: auto;">
+            <a href="#contact" class="video-section__cta-btn">
+              Quiero ser de los primeros: CLICK Aqui para Ver Webinar
+            </a>
+          </div> -->
         </div>
       </div>
     </section>
@@ -811,6 +836,21 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
     </div>
   </footer>
 
+  <!-- ========== VIDEO MODAL ========== -->
+  <div class="video-modal" id="video-modal" role="presentation">
+    <div class="video-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="video-modal-header">
+        <h3 class="video-modal-title" id="modal-title"></h3>
+        <button class="video-modal-close" id="modal-close" type="button" aria-label="Cerrar video">X</button>
+      </div>
+      <div class="video-modal-body">
+        <video id="modal-video" controls autoplay playsinline webkit-playsinline preload="auto">
+          Tu navegador no puede reproducir este video.
+        </video>
+      </div>
+    </div>
+  </div>
+
   <!-- Modal Form Popup -->
   <div id="form-popup-modal" class="form-popup-modal" aria-hidden="true" style="display: none;">
     <div class="form-popup-overlay"></div>
@@ -861,6 +901,6 @@ $userIdBySubdomain = $rowUSU["clave"] ?? '';
     </div>
   </div>
 
-  <script src="script.js?v=1.0.5"></script>
+  <script src="script.js?v=1.0.6"></script>
 </body>
 </html>
