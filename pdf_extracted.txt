@@ -1,0 +1,531 @@
+Landing del webinar — cambios para
+Subroto
+Nov 17, 2026 · @Luis R Landeros
+Read this first
+Hi Subroto! This is a text-only update of one landing page. There are 69 numbered
+changes, listed from the top of the page to the bottom. Please do them in order and do
+not skip any number.
+Page to edit: vioniko.com/landingpage/29beta/index_beta.php?
+subdominio=aprendeganando
+Why we are changing it: today the page talks about price, commissions and certification.
+From now on the page has only one goal: the visitor watches the video and registers for
+the free webinar. Price, commissions and certification are explained later, inside the
+webinar.
+Step 0 — Before you change anything
+1. Make a full copy of the current page (HTML, CSS, JS and images) and keep it as a
+backup. Name it index_beta_afiliados.php. Do not edit the copy.
+2. Make all 69 changes on the original page: index_beta.php.
+Do NOT touch (Luis is handling these)
+Any button that stays on the page: do not change its text, its link or its action. Some
+buttons were already connected to the popup by Luis.
+The popup and its form: do not change any text, field or setting inside it.
+The design: colors, fonts, font sizes, spacing, backgrounds, animations, the button
+gradients, the logo and the layout.
+The only buttons you remove are the ones inside the blocks you delete (Part B) and the
+hero button in change 12, because they point to sections that will no longer exist.
+Rules
+Copy every new text exactly as written, including Spanish accents and symbols: á é í ó
+ú ñ ¿. Copy and paste from this document instead of typing.
+Landing del webinar — cambios para Subroto
+Page 1 of 12
+
+-- 1 of 12 --
+
+The bold text in the "New text" column is the exact text to paste. Do not add quotation
+marks, periods or emojis that are not there.
+If a text in the "Current text" column is slightly different on the page (for example,
+punctuation), it is still the same item. Change it.
+If you find something that mentions price, 29 USD, commission, affiliate, Nivel 1,
+Nivel 2, certificate or subscription and it is not in this list, do not guess: write it down
+and send it to Luis.
+The 2 types of action in the tables
+Part A — Header menu, hero and video (changes 1–15)
+Header menu
+The menu appears in two places: the desktop header and the mobile/sticky menu
+(hamburger). Do changes 1–5 in both places.
+After 1–5, the header shows only the ChatVioniko logo and the header button. Do not
+touch the logo or the button.
+Action 	What it means
+REPLACE TEXT Keep the element (same style, same place). Only
+change its text to the new text.
+DELETE 	Remove the element completely from the HTML,
+including its container (div, card, badge, list item).
+No empty box, gap or line should remain.
+# 	Current text 	Action 	New text
+1 	Como funciona (menu link) DELETE —
+2 	Ganancias (menu link) 	DELETE —
+3 	Que incluye (menu link) 	DELETE —
+4 	Afiliados (menu link) 	DELETE —
+5 	Preguntas (menu link) 	DELETE —
+Landing del webinar — cambios para Subroto
+Page 2 of 12
+
+-- 2 of 12 --
+
+Hero (first section of the page)
+If changes 9–11 leave the container of the stat boxes empty, delete that empty
+container too.
+# 	Current text 	Action 	New text
+6 	Programa de afiliados (small
+label above the big title)
+REPLACE TEXT 	Webinar disponible ahora
+7 	Gana comisiones
+recomendando ChatVioniko
+(big title)
+REPLACE TEXT 	Un webinar que te
+contesta.
+8 	Paragraph under the title that
+starts "Comparte una
+plataforma completa de
+inteligencia artificial y recibe
+comisiones…"
+REPLACE TEXT
+(whole paragraph)
+Descubre todo lo que
+estamos lanzando con
+ChatVioniko y resuelve tus
+dudas en tiempo real con
+nuestro asistente de IA.
+Míralo cuando quieras.
+9 	Stat box "20%" with label
+"Nivel 1"
+DELETE 	—
+10 	Stat box "5%" with label "Nivel
+2 certificado"
+DELETE 	—
+11 	Stat box "29 USD" with label
+"Precio lanzamiento"
+DELETE 	—
+12 	Button "Ver como funciona el
+programa" (it links to #como-
+funciona, a section that will be
+deleted)
+DELETE 	—
+13 	Small note: "Prueba
+ChatVioniko gratis. Si luego
+activas tu suscripcion, tendras
+disponible el Programa de
+Afiliados dentro de tu cuenta."
+DELETE 	—
+14 	Paragraph that starts "Ideal
+para creadores de contenido,
+marketers, emprendedores…"
+DELETE 	—
+Landing del webinar — cambios para Subroto
+Page 3 of 12
+
+-- 3 of 12 --
+
+The other hero button stays as it is. Do not touch it.
+Video
+If the same video file is used in more than one place on the page, replace the URL in every
+place.
+Part B — Delete six whole sections (changes 16–21)
+Each change below deletes one complete section: its small label, title, paragraphs,
+numbers, cards, tables, calculator, diagram, disclaimers and the buttons inside it. Find
+each section by its title, then delete the whole section container (the <section> or main
+<div> that wraps it).
+# 	Current text 	Action 	New text
+15 	The video player
+on the page (the
+video of Luis at
+his desk)
+Replace only the
+video file URL
+(the src of the
+video). Keep the
+player, its size,
+position, border
+and poster
+image.
+New video URL: Luis will send it to you (the
+new file is called
+academia_vioniko_landing_sin_precio.mp4)
+# 	Section title (find this) 	What is inside (all of it goes) 	Action
+16 	Card with "Tu enlace" and
+"Comparte ChatVioniko"
+Nivel 1 · 20% suscripcion
+directa · Ejemplo 5.80 USD por
+suscripcion · Nivel 2 certificado
+· Tu Afiliado Suscriptor · 5%
+segundo nivel
+DELETE whole
+card
+17 	"Cuanto podrias generar?"
+(small label "Cuanto puedes
+ganar")
+Comision directa · 29 USD x
+20% = 5.80 USD · table 5 / 10 / 25
+/ 50 / 100 suscripciones ·
+"Calculadora rapida" with its
+slider and "$145" · both
+disclaimers "No representa(n)
+ingresos garantizados"
+DELETE whole
+section
+Landing del webinar — cambios para Subroto
+Page 4 of 12
+
+-- 4 of 12 --
+
+After 16–21:
+Check there is no empty space, empty background band or extra divider line where
+the sections were.
+Remove any anchor link that points to these sections ( #como-funciona , #ganancias ,
+#afiliados , etc.). Nothing on the page should link to a section that no longer exists.
+Part C — Sections that stay, with text changes (changes 22–38)
+These four sections stay on the page with the same design. Only the texts below change.
+Everything in these sections that is not listed here, including their buttons, stays exactly
+as it is.
+# 	Section title (find this) 	What is inside (all of it goes) 	Action
+18 	"Y si construyes tu propia red?"
+(small label "Nivel 2
+certificado")
+29 USD x 5% = 1.45 USD · 20
+suscripciones indirectas… ·
+"Nivel 2 sujeto a certificacion y
+aprobacion" · diagram Tú →
+Afiliado referido → Nuevo
+suscriptor · labels 20% directo /
+5% segundo nivel · numbers 01
+02 03
+DELETE whole
+section
+19 	"Todo en una sola suscripcion"
+(small label "Bloque de valor")
+Tags Chat IA, Prompts,
+Imagenes, Video, SEO,
+Asistentes, Chatbots, Academia
+Vioniko · "= una sola
+suscripcion" · "29 USD / mes ·
+precio de lanzamiento" ·
+paragraph "Puedes registrarte
+gratis y probar la plataforma…"
+DELETE whole
+section
+20 	"Empezar es simple" (small label
+"Como funciona")
+Steps 01 Prueba ChatVioniko ·
+02 Activa tu suscripcion · 03
+Activa el programa · 04 Obten
+tu enlace · 05 Genera
+comisiones · button "Empezar
+prueba gratuita"
+DELETE whole
+section
+21 	"Ya tienes personas a las que
+podria servirles ChatVioniko?"
+Its paragraph and the button
+"Empieza con ChatVioniko"
+DELETE whole
+section
+Landing del webinar — cambios para Subroto
+Page 5 of 12
+
+-- 5 of 12 --
+
+Features section (title today: "No estas recomendando solo un chat")
+The other 7 card titles stay as they are: Chat IA personalizable · Biblioteca de prompts ·
+Escritura guiada · Keyword research · Estudio de video con IA · Avatares con IA ·
+Asistentes IA.
+Academy section (title "Academia Vioniko")
+# 	Current text 	Action 	New text
+22 	Que estas recomendando
+(small label above the title)
+REPLACE TEXT 	Lo que vas a descubrir
+23 	No estas recomendando
+solo un chat (title)
+REPLACE TEXT 	No es solo un chat.
+24 	ChatVioniko reune
+multiples herramientas de
+inteligencia artificial
+dentro de una sola
+suscripcion. (paragraph
+under the title)
+REPLACE TEXT 	ChatVioniko reúne
+múltiples herramientas
+de inteligencia artificial
+en un solo lugar.
+25 	Generacion de imagenes
+con IA (card title)
+REPLACE TEXT 	Generación de imágenes
+con IA
+26 	Creacion de chatbots
+(card title)
+REPLACE TEXT 	Creación de chatbots
+27 	The short description
+inside each of the 9 feature
+cards
+Read all 9 descriptions. If
+a sentence mentions
+precio, suscripción /
+suscripcion, comisión /
+comision or afiliado,
+DELETE only that
+sentence. If none do,
+change nothing.
+—
+# 	Current text 	Action 	New text
+28 	Academia incluida (small
+label)
+REPLACE TEXT 	Aprende con nosotros
+Landing del webinar — cambios para Subroto
+Page 6 of 12
+
+-- 6 of 12 --
+
+The title "Academia Vioniko" and these list items stay: Clases semanales en vivo ·
+Ejercicios · Aplicaciones reales con IA · Comunidad.
+"Try it" section (title "Descubre todo lo que puedes hacer con ChatVioniko")
+The title "Descubre todo lo que puedes hacer con ChatVioniko" and the button of this
+section stay. Do not touch the button.
+# 	Current text 	Action 	New text
+29 	Paragraph that starts "Tu
+suscripcion a ChatVioniko
+tambien incluye acceso a
+Academia Vioniko…"
+REPLACE TEXT
+(whole paragraph)
+Con ChatVioniko también
+tienes Academia Vioniko:
+clases en vivo para aprender
+a usar la inteligencia artificial
+de forma práctica.
+30 	Aprendizaje practico (list
+item)
+REPLACE TEXT 	Aprendizaje práctico
+31 	Acompanamiento (list item) 	REPLACE TEXT 	Acompañamiento
+32 	Certificado de finalizacion
+(list item)
+DELETE (the item
+and its icon)
+—
+# 	Current text 	Action 	New text
+33 	Ahora pruebalo tu (small label) REPLACE TEXT 	Velo por ti mismo
+34 	Paragraph that starts "Conoce
+la plataforma mas a fondo,
+explora sus herramientas…"
+REPLACE TEXT
+(whole paragraph)
+En el webinar te
+mostramos la plataforma a
+fondo y, desde que te
+registras, puedes probarla
+gratis.
+35 	Cuando activas tu suscripcion
+desbloqueas todas las
+funcionalidades de
+ChatVioniko, incluyendo
+Academia Vioniko y el acceso
+al Programa de Afiliados.
+DELETE 	—
+Landing del webinar — cambios para Subroto
+Page 7 of 12
+
+-- 7 of 12 --
+
+"Who it's for" section (title today: "Este programa es para ti?")
+These 8 tags stay: Creadores de contenido · Marketers · Emprendedores · Agencias ·
+Educadores · Comunidades · Freelancers · Personas interesadas en IA.
+Part D — FAQ, final block, footer and page title (changes 39–69)
+FAQ section (title "Preguntas frecuentes")
+The title "Preguntas frecuentes" stays. Keep the first 5 question boxes and change their
+question and answer. Then delete all the other questions.
+# 	Current text 	Action 	New text
+36 	Este programa es para ti?
+(title)
+REPLACE TEXT 	¿Para quién es?
+37 	Paragraph that starts "No
+necesitas tener millones de
+seguidores…"
+REPLACE TEXT
+(whole paragraph)
+Para cualquier persona que
+quiera usar la inteligencia
+artificial para trabajar mejor
+y hacer crecer su negocio.
+38 	Personas que recomiendan
+herramientas digitales (tag)
+DELETE 	—
+# 	Current text 	Action 	New text
+39 	Programa (group label above
+the questions)
+REPLACE TEXT 	Webinar
+40 	Question: Cuanto cuesta
+ChatVioniko?
+REPLACE TEXT 	¿El webinar tiene costo?
+41 	The answer of that question 	REPLACE TEXT
+(whole answer)
+No. Es gratis.
+42 	Question: Necesito tener
+ChatVioniko para ser afiliado?
+REPLACE TEXT 	¿A qué hora es?
+43 	The answer of that question 	REPLACE TEXT
+(whole answer)
+Está disponible ahora. Lo ves
+cuando quieras.
+Landing del webinar — cambios para Subroto
+Page 8 of 12
+
+-- 8 of 12 --
+
+# 	Current text 	Action 	New text
+44 	Question: Donde me registro
+como afiliado?
+REPLACE TEXT 	¿Puedo hacer preguntas
+durante el webinar?
+45 	The answer of that question 	REPLACE TEXT
+(whole answer)
+Sí. Un asistente de
+inteligencia artificial te
+responde en tiempo real.
+46 	Question: Puedo probar
+ChatVioniko antes de pagar?
+REPLACE TEXT 	¿Puedo probar ChatVioniko?
+47 	The answer of that question 	REPLACE TEXT
+(whole answer)
+Sí. Al registrarte puedes
+empezar a probarlo gratis de
+inmediato.
+48 	Question: Cuanto recibo por
+una suscripcion directa?
+REPLACE TEXT 	¿Qué necesito para entrar?
+49 	The answer of that question 	REPLACE TEXT
+(whole answer)
+Solo tu nombre, correo y
+WhatsApp para enviarte el
+acceso.
+50 	Question "Que es el Nivel 2?"
+with its answer
+DELETE 	—
+51 	Question "La comision es
+recurrente?" with its answer
+DELETE 	—
+52 	Question "Que obtengo al
+activar mi suscripcion?" with
+its answer
+DELETE 	—
+53 	Condiciones (second group
+label)
+DELETE 	—
+54 	Question "Gano comision por
+los creditos?" with its answer
+DELETE 	—
+55 	Question "Necesito muchos
+seguidores?" with its answer
+DELETE 	—
+56 	Question "Que incluye
+ChatVioniko?" with its answer
+DELETE 	—
+Landing del webinar — cambios para Subroto
+Page 9 of 12
+
+-- 9 of 12 --
+
+Result: the FAQ shows the label "Webinar" and exactly 5 questions (40, 42, 44, 46, 48), in
+that order. Each question must still open and close as it does today.
+Final block (title today: "Todo empieza conociendo ChatVioniko")
+The button of this block stays. Do not touch it.
+Footer
+# 	Current text 	Action 	New text
+57 	Programa de afiliados (small
+label above the title)
+REPLACE TEXT 	Webinar gratuito
+58 	Todo empieza conociendo
+ChatVioniko (title)
+REPLACE TEXT 	Todo empieza aquí.
+59 	The paragraph directly under
+that title (it talks about trying
+the platform and the affiliate
+program)
+REPLACE TEXT
+(whole paragraph)
+Mira el webinar y descubre
+lo que estamos lanzando.
+60 	Badge "29 USD / mes precio
+de lanzamiento"
+DELETE 	—
+61 	Badge "20% Nivel 1" 	DELETE 	—
+62 	Badge "5% Nivel 2 para
+afiliados certificados"
+DELETE 	—
+# 	Current text 	Action 	New text
+63 	ChatVioniko Afiliados (footer heading / brand
+name; replace it everywhere it appears in the
+footer)
+REPLACE TEXT ChatVioniko
+64 	Como funciona (footer link) 	DELETE 	—
+65 	Ganancias (footer link) 	DELETE 	—
+66 	Que incluye (footer link) 	DELETE 	—
+67 	Afiliados (footer link) 	DELETE 	—
+Landing del webinar — cambios para Subroto
+Page 10 of 12
+
+-- 10 of 12 --
+
+Keep in the footer: the link "Preguntas" / "Preguntas frecuentes" (it must still scroll to the
+FAQ), the footer button (do not touch it) and "© ChatVioniko".
+Page title and description (HTML <head> )
+Part E — Final check and what to send back to Luis
+Check 1 — Search for forbidden words
+Open the finished page in the browser and use Ctrl+F (Cmd+F on Mac). Search each
+word below. Each search must find 0 results in the page texts. If one finds something,
+delete or fix it, or tell Luis if you are not sure. Texts inside buttons and inside the popup do
+not count: Luis is handling those.
+# 	Current text 	Action 	New text
+68 	The <title> of the page (today it
+talks about the ChatVioniko affiliate
+program)
+REPLACE
+TEXT
+Webinar ChatVioniko | Un
+webinar que te contesta
+69 	The <meta name="description">
+and, if they exist, og:title and
+og:description
+REPLACE
+TEXT
+Title tags: Webinar
+ChatVioniko | Un webinar que
+te contesta · Description tags:
+Webinar gratuito: descubre
+todo lo que estamos lanzando
+con ChatVioniko y resuelve
+tus dudas en tiempo real con
+un asistente de IA.
+29
+USD
+precio
+lanzamiento
+comision (also check "comisión")
+Nivel
+afiliado
+certific
+suscripcion (also check "suscripción")
+Landing del webinar — cambios para Subroto
+Page 11 of 12
+
+-- 11 of 12 --
+
+Check 2 — Nothing broken
+Check 3 — Phones
+Open the page on an iPhone (Safari) and on an Android phone (Chrome) and confirm:
+What to send back to Luis
+1. The link of the finished page.
+2. Two full-page screenshots: one desktop, one mobile.
+3. A short message: "Changes 1–69 done", plus the number of any change you could not
+do and why.
+Thank you, Subroto!
+No empty spaces, empty background bands or extra lines where blocks were deleted.
+No link points to a section that was deleted (#como-funciona, #ganancias, #que-
+incluye, #afiliados).
+The FAQ questions open and close.
+The "Preguntas frecuentes" link in the footer scrolls to the FAQ.
+The buttons and the popup still work exactly as before your changes.
+The new video plays.
+Texts don't overlap and no section looks broken.
+Landing del webinar — cambios para Subroto
+Page 12 of 12
+
+-- 12 of 12 --
+

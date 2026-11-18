@@ -40,7 +40,7 @@ if (isset($_GET['mode']) && $_GET['mode'] === 'edit') {
 $template = 194;
 include_once('../../subdominio_ini.php');
 $userIdBySubdomain = $rowUSU["clave"] ?? '';
-$video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/General_Horizontalv1.mp4';
+$video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/academia_vioniko_landing_sin_precio.mp4';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -74,11 +74,6 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
       </a>
 
       <nav class="header-nav" aria-label="Principal">
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#ganancias">Ganancias</a>
-        <a href="#que-incluye">Que incluye</a>
-        <a href="#afiliados">Afiliados</a>
-        <a href="#preguntas">Preguntas</a>
       </nav>
 
       <div class="header-cta">
@@ -97,11 +92,6 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
     <!-- Mobile Drawer Menu -->
     <nav class="mobile-nav" aria-label="Principal movil">
       <div class="mobile-nav-inner">
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#ganancias">Ganancias</a>
-        <a href="#que-incluye">Que incluye</a>
-        <a href="#afiliados">Afiliados</a>
-        <a href="#preguntas">Preguntas</a>
         <a href="https://chatvioniko.com" class="btn btn-primary btn-full" style="margin-top: 0.75rem;" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
       </div>
     </nav>
@@ -130,43 +120,21 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
         <!-- 2-Column Hero Grid: Left Content + Right Visual Mockup Widget -->
         <div class="hero-content-grid">
           <div class="reveal">
-            <span class="eyebrow-badge">Programa de afiliados</span>
+            <span class="eyebrow-badge">Webinar disponible ahora</span>
             <h1 class="hero-main-title">
-              Gana comisiones<br>
-              <span class="gradient-text">recomendando ChatVioniko</span>
+              Un webinar que<br>
+              <span class="gradient-text">te contesta.</span>
             </h1>
             <p style="margin-top: 1.5rem; max-width: 42rem; font-size: 1.125rem; line-height: 1.75rem; color: var(--mist);">
-              Comparte una plataforma completa de inteligencia artificial y recibe comisiones por las nuevas suscripciones que generes con tu enlace cuando tengas una suscripcion activa y el programa habilitado dentro de tu cuenta.
+              Descubre todo lo que estamos lanzando con ChatVioniko y resuelve tus dudas en tiempo real con nuestro asistente de IA. Míralo cuando quieras.
             </p>
-
-            <!-- Stat Pills Grid -->
-            <div class="stat-pills-grid">
-              <div class="stat-pill">
-                <p class="stat-pill-val">20%</p>
-                <p class="stat-pill-label">Nivel 1</p>
-              </div>
-              <div class="stat-pill">
-                <p class="stat-pill-val">5%</p>
-                <p class="stat-pill-label">Nivel 2 certificado</p>
-              </div>
-              <div class="stat-pill">
-                <p class="stat-pill-val">29 USD</p>
-                <p class="stat-pill-label">Precio lanzamiento</p>
-              </div>
-            </div>
 
             <!-- Action Buttons Stack -->
             <div class="hero-btn-stack">
               <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
-              <a href="#como-funciona" class="btn btn-secondary">Ver como funciona el programa</a>
             </div>
 
-            <p style="margin-top: 1.5rem; max-width: 42rem; font-size: 0.875rem; font-weight: 700; line-height: 1.5rem; color: var(--mist);">
-              Prueba ChatVioniko gratis. Si luego activas tu suscripcion, tendras disponible el Programa de Afiliados dentro de tu cuenta.
-            </p>
-            <p style="margin-top: 0.75rem; max-width: 42rem; font-size: 0.875rem; line-height: 1.5rem; color: rgba(184, 199, 220, 0.8);">
-              Ideal para creadores de contenido, marketers, emprendedores, comunidades, agencias y personas que ya recomiendan herramientas digitales.
-            </p>
+            
           </div>
 
           <!-- Right Column: HeroAffiliateVisual Widget Box -->
