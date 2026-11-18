@@ -1379,3 +1379,239 @@ details[open] .faq-icon {
   }
 }
 
+/* ============================================================
+   VIDEO PREVIEW, MODAL & VIDEO SECTION CTA STYLES
+   ============================================================ */
+.video-preview {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(34, 211, 238, 0.25);
+  background: rgba(8, 17, 32, 0.8);
+  box-shadow: var(--shadow-cyan);
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  transition: transform 300ms, border-color 300ms, box-shadow 300ms;
+}
+
+.video-preview:hover {
+  transform: scale(1.01);
+  border-color: rgba(34, 211, 238, 0.4);
+  box-shadow: var(--shadow-glow);
+}
+
+.video-preview:focus-visible {
+  outline: 2px solid var(--cyan-glow);
+  outline-offset: 2px;
+}
+
+.video-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 300ms;
+}
+
+.video-preview:hover video {
+  transform: scale(1.015);
+}
+
+.video-preview-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(3, 7, 17, 0.3);
+  transition: background 300ms;
+  pointer-events: none;
+}
+
+.video-preview:hover .video-preview-overlay {
+  background: rgba(3, 7, 17, 0.18);
+}
+
+.video-grid-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.video-preview-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+}
+
+.play-btn {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow-glow);
+  transition: transform 300ms, background 300ms;
+}
+
+@media (min-width: 640px) {
+  .play-btn {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.video-preview:hover .play-btn {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.play-triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 18px solid #ffffff;
+  margin-left: 3px;
+}
+
+.video-preview--wide {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+/* Video Modal */
+.video-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background: rgba(3, 7, 17, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  padding: 1.5rem 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .video-modal {
+    padding: 1.5rem;
+  }
+}
+
+.video-modal.open {
+  display: flex;
+}
+
+.video-modal-dialog {
+  width: 100%;
+  max-width: 64rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  background: var(--panel);
+  box-shadow: var(--shadow-glow);
+}
+
+.video-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .video-modal-header {
+    padding: 0.75rem 1.25rem;
+  }
+}
+
+.video-modal-title {
+  font-size: 0.875rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (min-width: 640px) {
+  .video-modal-title {
+    font-size: 1rem;
+  }
+}
+
+.video-modal-close {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  flex-shrink: 0;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 200ms, background 200ms;
+}
+
+.video-modal-close:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.video-modal-close:focus-visible {
+  outline: 2px solid var(--cyan-glow);
+  outline-offset: 2px;
+}
+
+.video-modal-body {
+  aspect-ratio: 16 / 9;
+  background: #000000;
+}
+
+.video-modal-body video {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Video Section CTA Button */
+.video-section__cta-btn {
+  background: #ff0000 !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  padding: 16px 24px !important;
+  border-radius: 10px !important;
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  box-shadow: 0 8px 25px rgba(255, 0, 0, 0.45) !important;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease !important;
+  border: none !important;
+  cursor: pointer !important;
+}
+
+.video-section__cta-btn:hover {
+  background: #e60000 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 12px 30px rgba(255, 0, 0, 0.6) !important;
+}
+
+@media (max-width: 600px) {
+  .video-section__cta-btn {
+    font-size: 16px !important;
+    padding: 14px 18px !important;
+  }
+}
+

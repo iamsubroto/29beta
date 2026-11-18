@@ -82,7 +82,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
       </nav>
 
       <div class="header-cta">
-        <a href="https://chatvioniko.com" class="btn btn-primary btn-header" target="_blank" rel="noopener">Probar gratis</a>
+        <a href="https://chatvioniko.com" class="btn btn-primary btn-header" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
       </div>
 
       <button type="button" class="hamburger" aria-label="Abrir menu" aria-expanded="false">
@@ -102,7 +102,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
         <a href="#que-incluye">Que incluye</a>
         <a href="#afiliados">Afiliados</a>
         <a href="#preguntas">Preguntas</a>
-        <a href="https://chatvioniko.com" class="btn btn-primary btn-full" style="margin-top: 0.75rem;" target="_blank" rel="noopener">Probar gratis</a>
+        <a href="https://chatvioniko.com" class="btn btn-primary btn-full" style="margin-top: 0.75rem;" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
       </div>
     </nav>
   </header>
@@ -157,7 +157,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
 
             <!-- Action Buttons Stack -->
             <div class="hero-btn-stack">
-              <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">Probar ChatVioniko gratis</a>
+              <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
               <a href="#como-funciona" class="btn btn-secondary">Ver como funciona el programa</a>
             </div>
 
@@ -261,7 +261,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
                 29 USD x 20% = <span class="gradient-text">5.80 USD</span>
               </h3>
               <p style="margin-top: 1.25rem; font-size: 1rem; line-height: 1.75rem; color: var(--mist);">
-                Cada nueva suscripcion directa puede generar 5.80 USD de comision sobre el primer pago.
+                Cada nueva suscripcion directa puede generar 5.80 USD de comision residual.
               </p>
             </div>
           </div>
@@ -627,7 +627,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
         </div>
 
         <div class="reveal" style="margin-top: 2.5rem; text-align: center;">
-          <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">Empezar prueba gratuita</a>
+          <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
         </div>
       </div>
     </section>
@@ -670,7 +670,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
                 Empieza probando la plataforma, descubre que puedes recomendar y, cuando actives tu suscripcion, accede al Programa de Afiliados desde tu cuenta.
               </p>
               <div style="margin-top: 2rem;">
-                <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">Empieza con ChatVioniko</a>
+                <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
               </div>
             </div>
           </div>
@@ -807,7 +807,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/Ge
               Prueba la plataforma, descubre las herramientas que tendras para recomendar y, cuando actives tu suscripcion, podras acceder al Programa de Afiliados directamente desde tu cuenta.
             </p>
             <div style="margin-top: 2rem;">
-              <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">Probar ChatVioniko gratis</a>
+              <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
             </div>
 
             <div style="margin-top: 1.5rem; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; font-size: 0.75rem; font-weight: 900; text-transform: uppercase;">

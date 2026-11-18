@@ -115,6 +115,72 @@
     updateCalculator(rangeInput ? rangeInput.value : 25);
   }
 
+  /* ------ Video Modal ------ */
+  var modal = document.getElementById('video-modal');
+  var modalVideo = document.getElementById('modal-video');
+  var modalTitle = document.getElementById('modal-title');
+  var modalClose = document.getElementById('modal-close');
+  var lastFocused = null;
+
+  function openModal(src, title) {
+    if (!modal || !modalVideo) return;
+    lastFocused = document.activeElement;
+    modalTitle.textContent = title || '';
+
+    // Remove media fragments like #t=0.001 for modal playback
+    var cleanSrc = src ? src.split('#')[0] : '';
+    modalVideo.src = cleanSrc;
+    modalVideo.setAttribute('playsinline', '');
+    modalVideo.setAttribute('webkit-playsinline', '');
+    modalVideo.load();
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    setTimeout(function () { if (modalClose) modalClose.focus(); }, 50);
+    document.addEventListener('keydown', onModalKeyDown);
+
+    // Explicitly call play() within user gesture context for iOS Safari
+    var playPromise = modalVideo.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(function (err) {
+        console.warn('Autoplay prevented or interrupted:', err);
+      });
+    }
+  }
+
+  function closeModal() {
+    if (!modal || !modalVideo) return;
+    modal.classList.remove('open');
+    modalVideo.pause();
+    modalVideo.removeAttribute('src');
+    modalVideo.load();
+    document.body.style.overflow = '';
+    document.removeEventListener('keydown', onModalKeyDown);
+    if (lastFocused && typeof lastFocused.focus === 'function') {
+      lastFocused.focus();
+    }
+  }
+
+  function onModalKeyDown(e) {
+    if (e.key === 'Escape') closeModal();
+  }
+
+  if (modalClose) {
+    modalClose.addEventListener('click', closeModal);
+  }
+
+  if (modal) {
+    modal.addEventListener('click', function (e) {
+      if (e.target === modal) closeModal();
+    });
+  }
+
+  // Wire up all video preview buttons
+  document.querySelectorAll('.video-preview[data-src]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      openModal(btn.dataset.src, btn.dataset.title || '');
+    });
+  });
+
   /* ------ Form Popup Modal Controller ------ */
   const formModal = document.getElementById('form-popup-modal');
   if (formModal) {
@@ -126,7 +192,7 @@
     const formOverlay = formModal.querySelector('.form-popup-overlay');
     const formCloseBtn = formModal.querySelector('.form-popup-close');
     const popupCtaButtons = document.querySelectorAll(
-      '.btn-primary, a[href="https://chatvioniko.com"], .btn-trigger-popup, .header-cta a, .mobile-nav a.btn-primary'
+      '.btn-primary, a[href="https://chatvioniko.com"], .btn-trigger-popup, .header-cta a, .mobile-nav a.btn-primary, .video-section__cta-btn, a[href="#contact"]'
     );
 
     function openFormModal(e) {
