@@ -1,0 +1,213 @@
+Round 2 — 23 text changes
+Hi Subroto! Round 1 is done, great work. This round changes texts in three sections that
+are already on the page: the tool cards, the Academia Vioniko section and the final block.
+There are 23 numbered changes. Please do them in order.
+Page: vioniko.com/landingpage/29beta/index_beta.php?subdominio=aprendeganando
+Same rules as Round 1
+Text only. Do not change the design, colors, fonts, sizes, spacing, card style or layout.
+Do not touch any button or the popup. Luis is handling them.
+Copy and paste every new text exactly as written, including accents: á é í ó ú ñ.
+The bold text in the "New text" column is the exact text to paste.
+REPLACE TEXT = keep the element, change only its text. DELETE = remove the
+element and its container, with no empty gap left.
+Before you start, save a backup copy of the page as it is now.
+Part A — Tool cards (section "NO ES SOLO UN CHAT.")
+Four cards get a new title and a new description. Three cards only get their accents fixed.
+The cards keep their position, size and style.
+# 	Current text 	Action 	New text
+1 	Chat IA personalizable (card
+title, first card)
+REPLACE TEXT 	Un equipo de asesores con IA
+2 	Cada conversacion puede
+configurarse con
+instrucciones, contexto, estilo
+de respuesta y nivel de
+creatividad. (description of
+that card)
+REPLACE TEXT 	GPT, Claude, Gemini,
+DeepSeek y Grok en un solo
+lugar, cada uno en la tarea
+que mejor hace.
+3 	Keyword research (card title) REPLACE TEXT 	Analizador de mercado y SEO
+Round 2
+Page 1 of 5
+
+-- 1 of 5 --
+
+# 	Current text 	Action 	New text
+4 	Investigacion de palabras
+clave, intencion de busqueda,
+ideas de titulos y meta
+descriptions para SEO.
+(description of that card)
+REPLACE TEXT 	Descubre qué busca tu
+cliente y qué palabras usar
+para que te encuentre en
+internet.
+5 	Estudio de video con IA (card
+title)
+REPLACE TEXT 	Analizador de videos de
+YouTube
+6 	Creacion de videos con
+estrategia, guion, voz,
+modelos de video y diferentes
+formatos. (description of that
+card)
+REPLACE TEXT 	Entiende lo esencial de
+cualquier video de YouTube
+en minutos, incluso si está en
+otro idioma.
+7 	Avatares con IA (card title) 	REPLACE TEXT 	Apps y juegos sin programar
+8 	Posibilidad de generar videos
+utilizando avatares que
+hablan. (description of that
+card)
+REPLACE TEXT 	Crea apps, simuladores y
+juegos con solo describirlos,
+sin saber programar.
+9 	Creacion de piezas visuales
+mediante prompts
+directamente desde la
+plataforma. (description of
+"Generación de imágenes con
+IA")
+REPLACE TEXT
+(accent only)
+Creación de piezas visuales
+mediante prompts
+directamente desde la
+plataforma.
+10 	Asistentes configurables para
+investigacion, creacion de
+contenido, monitoreo, correo,
+recordatorios y otras tareas.
+(description of "Asistentes
+IA")
+REPLACE TEXT
+(accents only)
+Asistentes configurables
+para investigación, creación
+de contenido, monitoreo,
+correo, recordatorios y otras
+tareas.
+Round 2
+Page 2 of 5
+
+-- 2 of 5 --
+
+These cards stay exactly as they are: Biblioteca de prompts · Escritura guiada ·
+Generación de imágenes con IA (title) · Asistentes IA (title) · Creación de chatbots (title).
+Part B — Academia Vioniko section
+The list goes from 6 items to 3. The section keeps the same layout: small label, title and
+paragraph on one side, list on the other.
+# 	Current text 	Action 	New text
+11 	Chatbots personalizados para
+WordPress, paginas
+corporativas, landing pages,
+sitios de servicios, negocios y
+atencion al cliente.
+(description of "Creación de
+chatbots")
+REPLACE TEXT
+(accents only)
+Chatbots personalizados para
+WordPress, páginas
+corporativas, landing pages,
+sitios de servicios, negocios y
+atención al cliente.
+# 	Current text 	Action 	New text
+12 	Aprende con nosotros (small
+label)
+REPLACE TEXT 	Academia Vioniko
+13 	Academia Vioniko (title) 	REPLACE TEXT 	Aquí sí te contestan.
+14 	Con ChatVioniko también
+tienes Academia Vioniko:
+clases en vivo para aprender a
+usar la inteligencia artificial de
+forma práctica. (paragraph)
+REPLACE TEXT 	Allá afuera ves tutoriales,
+pero nadie te contesta. Aquí
+tienes expertos que te
+ayudan paso a paso.
+15 	✓ Clases semanales en vivo
+(list item 1)
+REPLACE TEXT
+(keep the ✓)
+Asesoría privada de expertos,
+en máximo 24 horas hábiles
+16 	✓ Aprendizaje práctico (list
+item 2)
+REPLACE TEXT
+(keep the ✓)
+Videocomunidad con
+tutoriales nuevos cada
+semana
+17 	✓ Ejercicios (list item 3) 	REPLACE TEXT
+(keep the ✓)
+Clases en vivo gratis cada
+jueves
+Round 2
+Page 3 of 5
+
+-- 3 of 5 --
+
+If the list is a 2-column grid, the 3 items can show as 2 + 1 or as 1 column. Use whichever
+looks cleaner; do not leave empty boxes.
+Part C — Final block (above the footer)
+Today the title has two lines: "TODO EMPIEZA" in white and "AQUÍ." in the color gradient.
+Keep exactly that two-line style.
+The small label "WEBINAR GRATUITO" and the button stay as they are.
+# 	Current text 	Action 	New text
+18 	✓ Aplicaciones reales con IA
+(list item 4)
+DELETE 	—
+19 	✓ Comunidad (list item 5) 	DELETE 	—
+20 	✓ Acompañamiento (list item
+6)
+DELETE 	—
+# 	Current text 	Action 	New text
+21 	Title line 1 (white): Todo empieza 	REPLACE
+TEXT
+Llegar a tiempo vale más
+21 	Title line 2 (gradient): aquí. 	REPLACE
+TEXT
+que llegar preparado.
+22 	Mira el webinar y descubre lo que
+estamos lanzando. (paragraph under
+the title)
+REPLACE
+TEXT
+Mira el webinar y descubre
+por qué.
+Round 2
+Page 4 of 5
+
+-- 4 of 5 --
+
+Part D — Spacing
+Final check and what to send back
+Send Luis: the link, one desktop screenshot and one phone screenshot of the three
+changed sections, and the message "Round 2: changes 1–23 done", plus any number you
+could not do.
+Thank you, Subroto!
+# 	Where 	Action
+23 	The large empty dark space after the
+"Velo por ti mismo" section, and the one
+after the FAQ box
+Check if these spaces are left over from
+the sections deleted in Round 1. If they
+are, remove the extra space so the gap
+between sections is the same as
+everywhere else on the page. If it is
+normal section padding, leave it.
+Search the page (Ctrl+F / Cmd+F) for "Keyword", "Avatares", "Estudio de video", "Todo
+empieza", "Ejercicios" and "Acompañamiento": each must find 0 results.
+The 9 tool cards are all the same height and nothing overlaps, on desktop and on
+phone.
+The Academia section shows exactly 3 items with ✓.
+Buttons and popup still work as before.
+Round 2
+Page 5 of 5
+
+-- 5 of 5 --
+

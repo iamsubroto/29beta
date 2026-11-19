@@ -176,8 +176,8 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/ac
         <div class="feature-grid">
           <div class="reveal">
             <article class="feature-card feature-card--cyan">
-              <h3>Chat IA personalizable</h3>
-              <p>Cada conversacion puede configurarse con instrucciones, contexto, estilo de respuesta y nivel de creatividad.</p>
+              <h3>Un equipo de asesores con IA</h3>
+              <p>GPT, Claude, Gemini, DeepSeek y Grok en un solo lugar, cada uno en la tarea que mejor hace.</p>
             </article>
           </div>
 
@@ -197,43 +197,43 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/ac
 
           <div class="reveal">
             <article class="feature-card feature-card--cyan">
-              <h3>Keyword research</h3>
-              <p>Investigacion de palabras clave, intencion de busqueda, ideas de titulos y meta descriptions para SEO.</p>
+              <h3>Analizador de mercado y SEO</h3>
+              <p>Descubre qué busca tu cliente y qué palabras usar para que te encuentre en internet.</p>
             </article>
           </div>
 
           <div class="reveal">
             <article class="feature-card feature-card--violet">
               <h3>Generación de imágenes con IA</h3>
-              <p>Creacion de piezas visuales mediante prompts directamente desde la plataforma.</p>
+              <p>Creación de piezas visuales mediante prompts directamente desde la plataforma.</p>
             </article>
           </div>
 
           <div class="reveal">
             <article class="feature-card feature-card--lime">
-              <h3>Estudio de video con IA</h3>
-              <p>Creacion de videos con estrategia, guion, voz, modelos de video y diferentes formatos.</p>
+              <h3>Analizador de videos de YouTube</h3>
+              <p>Entiende lo esencial de cualquier video de YouTube en minutos, incluso si está en otro idioma.</p>
             </article>
           </div>
 
           <div class="reveal">
             <article class="feature-card feature-card--cyan">
-              <h3>Avatares con IA</h3>
-              <p>Posibilidad de generar videos utilizando avatares que hablan.</p>
+              <h3>Apps y juegos sin programar</h3>
+              <p>Crea apps, simuladores y juegos con solo describirlos, sin saber programar.</p>
             </article>
           </div>
 
           <div class="reveal">
             <article class="feature-card feature-card--violet">
               <h3>Asistentes IA</h3>
-              <p>Asistentes configurables para investigacion, creacion de contenido, monitoreo, correo, recordatorios y otras tareas.</p>
+              <p>Asistentes configurables para investigación, creación de contenido, monitoreo, correo, recordatorios y otras tareas.</p>
             </article>
           </div>
 
           <div class="reveal">
             <article class="feature-card feature-card--lime">
               <h3>Creación de chatbots</h3>
-              <p>Chatbots personalizados para WordPress, paginas corporativas, landing pages, sitios de servicios, negocios y atencion al cliente.</p>
+              <p>Chatbots personalizados para WordPress, páginas corporativas, landing pages, sitios de servicios, negocios y atención al cliente.</p>
             </article>
           </div>
 
@@ -243,31 +243,22 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/ac
               <div class="panel-lines" style="position: absolute; inset: 0;" aria-hidden="true"></div>
               <div class="academy-grid" style="position: relative;">
                 <div>
-                  <span class="eyebrow-badge" style="border-color: rgba(163, 230, 53, 0.25); background: rgba(163, 230, 53, 0.1); color: var(--lime-glow);">Aprende con nosotros</span>
-                  <h3 style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; text-transform: uppercase; color: #fff;">Academia Vioniko</h3>
+                  <span class="eyebrow-badge" style="border-color: rgba(163, 230, 53, 0.25); background: rgba(163, 230, 53, 0.1); color: var(--lime-glow);">Academia Vioniko</span>
+                  <h3 style="margin-top: 1rem; font-size: 1.875rem; font-weight: 900; text-transform: uppercase; color: #fff;">Aquí sí te contestan.</h3>
                   <p style="margin-top: 1rem; font-size: 1rem; line-height: 1.75rem; color: var(--mist);">
-                    Con ChatVioniko también tienes Academia Vioniko: clases en vivo para aprender a usar la inteligencia artificial de forma práctica.
+                    Allá afuera ves tutoriales, pero nadie te contesta. Aquí tienes expertos que te ayudan paso a paso.
                   </p>
                 </div>
 
-                <div style="display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                   <p style="border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem; font-size: 0.875rem; font-weight: 700; color: var(--mist);">
-                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Clases semanales en vivo
+                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Asesoría privada de expertos, en máximo 24 horas hábiles
                   </p>
                   <p style="border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem; font-size: 0.875rem; font-weight: 700; color: var(--mist);">
-                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Aprendizaje práctico
+                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Videocomunidad con tutoriales nuevos cada semana
                   </p>
                   <p style="border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem; font-size: 0.875rem; font-weight: 700; color: var(--mist);">
-                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Ejercicios
-                  </p>
-                  <p style="border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem; font-size: 0.875rem; font-weight: 700; color: var(--mist);">
-                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Aplicaciones reales con IA
-                  </p>
-                  <p style="border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem; font-size: 0.875rem; font-weight: 700; color: var(--mist);">
-                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Comunidad
-                  </p>
-                  <p style="border-radius: 0.375rem; border: 1px solid rgba(255, 255, 255, 0.1); background: rgba(255, 255, 255, 0.04); padding: 0.75rem; font-size: 0.875rem; font-weight: 700; color: var(--mist);">
-                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Acompañamiento
+                    <span style="color: var(--lime-glow); margin-right: 0.5rem;" aria-hidden="true">✓</span> Clases en vivo gratis cada jueves
                   </p>
                 </div>
               </div>
@@ -295,7 +286,7 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/ac
     </section>
 
     <!-- Section 7: Target Audience Section (max-w-5xl chip container) -->
-    <section class="section">
+    <section class="section" style="padding-top: 2rem;">
       <div class="container">
         <div class="reveal">
           <div class="section-heading">
@@ -379,17 +370,17 @@ $video = !empty($video) ? $video : 'https://chatvk.s3.us-west-2.amazonaws.com/ac
     </section>
 
     <!-- Section 10: Final CTA Panel (max-w-5xl) -->
-    <section class="section" style="padding-bottom: 6rem;">
+    <section class="section" style="padding-top: 2rem; padding-bottom: 6rem;">
       <div class="container">
         <div class="reveal">
           <div class="banner-box-callout max-w-5xl" style="border-color: rgba(139, 92, 246, 0.4); background: rgba(8, 17, 32, 0.8); box-shadow: var(--shadow-glow);">
             <p style="font-size: 0.875rem; font-weight: 900; text-transform: uppercase; color: var(--cyan-glow);">Webinar gratuito</p>
             <h2 class="banner-title">
-              Todo empieza<br>
-              <span class="gradient-text">aquí.</span>
+              Llegar a tiempo vale más<br>
+              <span class="gradient-text">que llegar preparado.</span>
             </h2>
             <p style="margin: 1.5rem auto 0; max-width: 48rem; font-size: 1rem; line-height: 1.75rem; color: var(--mist);">
-              Mira el webinar y descubre lo que estamos lanzando.
+              Mira el webinar y descubre por qué.
             </p>
             <div style="margin-top: 2rem;">
               <a href="https://chatvioniko.com" class="btn btn-primary" target="_blank" rel="noopener">VER WEBINAR AHORA</a>
